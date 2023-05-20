@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 10px;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .user-cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        padding: 10px 5px;
+    }
+
+    .user-card {
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 10px;
+        border: 1px solid gray;
+    }
+
+    select {
+        padding: 10px;
+        font-size: 15px;
+        background-color: black;
+        color: white;
+
+    }
+
+    #filter {
+        padding: 8px 60px;
+        border: none;
+    }
+
+    .inputs-list {
+        display: flex;
+        gap: 20px;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 0px;
+    }
+
+    input {
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid gray;
+    }
+
+    #add-user-button {
+        padding: 8px 40px;
+    }
+</style>
+
+<body>
+    <div style="padding: 20px;">
+        <p style="font-size: 20px; ">Filter ui cards via their profession</p>
+        <select>
+            <option value="">Profession</option>
+            <option value="developer">Developer</option>
+            <option value="admin">Admin</option>
+        </select>
+        <!-- {id:1,name:""john"",age:""18"",profession:""developer""} -->
+        <div class="user-cards-container" id="users-container">
+            <div class="user-card">
+                <p>1.</p>
+                <p>Name: john</p>
+                <p>Profession: developer</p>
+                <p>age: 22</p>
+
+            </div>
+            <div class="user-card">
+                <p>2.</p>
+                <p>Nmae: jack</p>
+                <p>Profession: developer</p>
+                <p>age: 19</p>
+
+            </div>
+        </div>
+        <button id="filter" style="font-size: 17px; margin-left: 20px;">Filter</button>
+        <div class="add-user-container"><br><br><br>
+            <p style="font-size: 20px; ">Add a new user</p>
+            <form id="user-form">
+                <div class="inputs-list">
+                    <div class="input-container">
+                        <label for="name">Enter Name</label>
+                        <input type="text" required placeholder="Name" id="name" name="name">
+                    </div>
+                    <div class="input-container">
+                        <label for="profession">Enter Profession</label>
+                        <input type="text" required placeholder="Profession" id="profession" name="profession">
+                    </div>
+                    <div class="input-container">
+                        <label for="age">Enter age</label>
+                        <input type="text" required placeholder="Age" id="age" name="age">
+                    </div>
+                </div>
+                <button type="submit" id="add-user-button" style="font-size: 16px;">Add User</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="./cmd.js"></script>
+</body>
+
+</html>
