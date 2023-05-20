@@ -7,7 +7,7 @@
 ### Step2 : 
 - In this step we are adding users by user input.
 - By extracting values from input tags with their name, profession, age. and by creating user object simply appended user object inside userList Array
-- by filtering we can see that our user input User added succefully. and we can extract them simply via their profession.
+- On clicking filter button we can see that our Users added succesfully in userList array. and we can extract them simply via their profession.
 
 ##
 <a href = "https://shubham2511github.github.io/F2C2/">**Visit Now** 🚀</a>
